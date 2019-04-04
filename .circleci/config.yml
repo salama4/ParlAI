@@ -112,7 +112,6 @@ jobs:
       - <<: *fixgit
       - <<: *setup
       - <<: *installdeps
-      - <<: *installtorchcpu
       - run:
           name: Unit tests
           command: python setup.py test -s tests.suites.unittests -v
